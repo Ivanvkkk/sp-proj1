@@ -18,7 +18,7 @@ array A, such that
 
 $$P(a_t = b_j |a_{t−1} = b_k, a_{t−2} = b_i) = T_{ikj}$$ .
 Given T, b and a pair of starting words from b, you can then iterate to generate text from the model. That is, given
-a word bi followed by a word bk, the following word has probability Tikj of being bj . To generate an appropriate
-bj , we use the sample function to sample a word from b with probabilities given by T[i,k,]. To estimate T
-you need to go through the text of the bible, counting up the number of times bj follows sequential word pairs
-bi, bk for all words in b.
+a word bi followed by a word $$b_k$$, the following word has probability $$T_{ikj}$$ of being $$b_j$$ . To generate an appropriate
+$$b_j$$ , we use the sample function to sample a word from b with probabilities given by T[i,k,]. To estimate T
+you need to go through the text of the bible, counting up the number of times $$b_j$$ follows sequential word pairs
+$$b_i, b_k$$ for all words in b.
