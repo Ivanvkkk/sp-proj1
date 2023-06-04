@@ -1,12 +1,3 @@
-#name ; university user name ; 
-#Shiyu Cai ; s2307982
-#Yifan Wu ; s2316499
-#Yifan Cai ; s2301729
-#Shiyu Cai: Data preprocessing, including separation of words and punctuation in sentences and generation of vectors a and b. And modify the version of b for the "capital" issue.
-#Yifan Wu: Create triplet, doublet, matrix T, A and vector S. And modify the version of b for the "capital" issue.
-#Yifan Cai:Simulate 50-words sections from model and directly from vector S respectively. And compare these 2 sections. And modify the version of b for the "capital" issue.
-
-
 library(stringr)
 setwd("/Users/eavan/Desktop/statistical programming /sp-proj1")##set work path as local repo, please change the directory before run the code
 ##read file content and skip first 104 lines
