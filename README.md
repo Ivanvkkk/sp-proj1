@@ -16,7 +16,7 @@ model’s ‘vocabulary’ will be limited to the m most common words. m ≈ 500
 common words are in a vector b. Let a be the vector of all words in the Bible. We will construct an m × m × m
 array A, such that
 
-P(at = bj |at−1 = bk, at−2 = bi) = Tikj .
+$$P(a_t = b_j |a_{t−1} = b_k, a_{t−2} = b_i) = T_{ikj}$$ .
 
 Given T, b and a pair of starting words from b, you can then iterate to generate text from the model. That is, given
 a word bi followed by a word bk, the following word has probability Tikj of being bj . To generate an appropriate
